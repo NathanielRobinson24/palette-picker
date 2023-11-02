@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Project</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Palette Picker</h1>
+      <form id ="First-Form" >
+        <h3>Add a Palette:</h3>
+        <input type="submit" value="Submit" />
+        <input type="text" placeholder="Palette Title" />
+        <br></br>
+        <label for="body">Color #1</label> 
+        <input type="color" id="body" name="body" value="#f6b73c" />
+        <br></br>
+        <label for="body">Color #2</label>
+        <input type="color" id="body" name="body" value="#f6b73c" />
+        <br></br>
+        <label for="body">Color #3</label>
+        <input type="color" id="body" name="body" value="#f6b73c" />
+        <p>Temperature:</p>
+        <input type="radio" id="Warm" name="Temperature" value="Warm">
+        <label for="html">Warm</label>
+        <input type="radio" id="Neutral" name="Temperature" value="Neutral">
+        <label for="css">Neutral</label>
+        <input type="radio" id="Cool" name="Temperature" value="Cool">
+        <label for="javascript">Cool</label>
+        <br></br>
+        <input type="submit" value="Create the Palette">
+      </form>
+        <br></br>
+      <div id= "Static-palette">
+        <div id="Palette-Marcy">
+          <h2>Marcy</h2>
+          <br></br>
+          <section class="firstrow1" id="color1"></section>
+          <button class="firstrow1" id="color1-button">Copy Text</button>
+          <p id="color2"></p>
+          <p id="color3"></p>
+          <input type="text" value="Text to be copied" id="textToCopy">
+        </div>
+        <div id="Palette-2"></div>
+        <div id="Palette-3"></div>
+      </div>
+      <fieldset>
+        <legend>Temperature</legend>
+        <input type="radio" name="temperature" id="warm" value="warm">
+        <label for="warm">Warm</label>
+        <input type="radio" checked name="temperature" id="neutral" value="neutral">
+        <label for="neutral">Neutral</label>
+        <input type="radio" name="temperature" id="cool" value="cool">
+        <label for="cool">Cool</label>
+      </fieldset>
+
+      <list id="palettes"></list>
+    </main>
+  </body>
+</html>
